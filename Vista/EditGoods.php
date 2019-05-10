@@ -36,9 +36,9 @@ $datos= $modelo->editGoods();
 										</textarea>
 									</div>
 									<div class="form-group">
-										<input type="text" name="Value" id="Value" tabindex="2" class="form-control" placeholder="Value" value="<?php if(isset($datos['Value'])){
+										<input type="text" name="Value" id="Value" tabindex="2" class="form-control" placeholder="Value"  value="<?php if(isset($datos['Value'])){
 											echo $datos['Value'];
-										}?>">
+										}?>"onKeyPress="return checkIt(event)">
 									</div>
 									<div class="form-group">
 									<select id="Usuarios" class="form-control" name="Usuarios">
